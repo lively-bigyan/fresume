@@ -1,6 +1,6 @@
 {
-    "name": "resume_maker",
-    "short_name": "resume_maker",
+    "name": "fresume",
+    "short_name": "fresume",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

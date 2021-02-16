@@ -1,18 +1,27 @@
 import 'package:flutter/material.dart';
-import 'package:resume_maker/resume_app.dart';
-import 'package:resume_maker/themes.dart';
+import 'package:provider/provider.dart';
+import 'package:fresume/resume_app.dart';
+import 'package:fresume/services/config_provider.dart';
+import 'package:fresume/utils/theme/themes.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: Themes(context).lightTheme,
-      home: ResumeApp(),
+    return ChangeNotifierProvider<ConfigProvider>(
+      create: (context) => ConfigProvider(),
+      builder: (context, child) {
+        return GestureDetector(
+          onTap: () => FocusScope.of(context).requestFocus(FocusNode()),
+          child: MaterialApp(
+            theme: Themes(context).lightTheme,
+            home: ResumeApp(),
+          ),
+        );
+      },
     );
   }
 }

@@ -1,4 +1,4 @@
-package com.example.resume_maker
+package com.example.fresume
 
 import io.flutter.embedding.android.FlutterActivity
 

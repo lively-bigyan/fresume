@@ -1,4 +1,4 @@
-# resume_maker
+# fresume
 
 A new Flutter project.
 

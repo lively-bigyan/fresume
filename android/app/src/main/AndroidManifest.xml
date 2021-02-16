@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.resume_maker">
+    package="com.example.fresume">
    <application
-        android:label="resume_maker"
+        android:label="fresume"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
